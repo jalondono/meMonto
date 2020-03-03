@@ -3,7 +3,7 @@ const {Schema} = mongoose;
 
 const reviewSchema = new Schema({
     review: {type: String},
-    rating: {type: Int16Array},
+    rating: {type: Number},
     author: {
         type: Schema.Types.ObjectId,
         ref: "user",

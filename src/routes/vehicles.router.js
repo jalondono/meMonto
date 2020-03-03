@@ -1,7 +1,15 @@
-const router = require('express').Router()
-const { getOne } = require('../controllers/vehicles.controller')
+const express = require('express');
+const router = express.Router();
+const { VehiclesController} = require('../controllers');
 
-router.get('/api/vehicle',)
-router.post('/api/vehicle/add',)
+//methods without params
+router.get('/', VehiclesController.getAll);
+router.post('/', VehiclesController.createOne);
 
-module.exports = router
+//methods with params
+router.get('/:id', VehiclesController.getOneById);
+router.put('/:id',VehiclesController.updateOne);
+router.delete('/:id',VehiclesController.deleteOne);
+router.get('/plate/:license_plate', VehiclesController.getOneByPlate);
+
+module.exports = router;
