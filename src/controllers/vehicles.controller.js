@@ -46,7 +46,7 @@ async function createOne(req, res) {
     }
     catch(err) {
         res.status(400).json({
-            message: "Error"
+            message: "Error Creating a Vehicle"
         });
     }
 }
