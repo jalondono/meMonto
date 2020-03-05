@@ -13,11 +13,11 @@ async function getOneById(req, res){
             data: id
         })
     } 
-};
+}
 async function getOneByPlate(req, res){
-    const plate =  req.params.license_plate;
+    const plate =  req.params.plate;
     try {
-        const data = await VehicleModel.findOne({license_plate: plate});
+        const data = await VehicleModel.findOne({plate: plate});
         return res.status(200).json(data)  
     }
     catch(err) {
@@ -26,7 +26,7 @@ async function getOneByPlate(req, res){
             data: id
         })
     } 
-};
+}
 async function getAll(req, res){
     try {
         const data = await VehicleModel.find();
@@ -37,7 +37,7 @@ async function getAll(req, res){
             message: "Error"
         });
     }
-};
+}
 async function createOne(req, res) {
     try {
         const newData = await new VehicleModel(req.body);
@@ -51,23 +51,28 @@ async function createOne(req, res) {
     }
 }
 async function updateOne(req, res) {
-    const id = req.params.id
+    const id = req.params.id;
     const data = req.body;
     try {
-        const update = await VehicleModel.update({_id: id}, {license_plate: data.license_plate});
-        return res.status(200).json({
-            message: "Updated successful"
-        });
-    }
-    catch(err) {
+        const update = await VehicleModel
+          .findOneAndUpdate({
+                _id: id
+            },
+            req.body,
+            {new: true})
+          .lean()
+          .exec();
+
+        if (!update){
+            return res.status(400).end()
+        }
+
+         res.status(200).json({ data: update })
+    } catch(err) {
         res.status(400).json({
             message: "Error Update"
         })
     }
-}
-
-async function deleteOne(req, res) {
-
 }
 
 module.exports = {
@@ -76,5 +81,4 @@ module.exports = {
     getAll,
     createOne,
     updateOne,
-    deleteOne,
 };

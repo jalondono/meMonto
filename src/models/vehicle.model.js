@@ -16,15 +16,15 @@ const vehicleSchema = new Schema({
       }],
   year:
       {
-        type: String, required: true
+        type: String
       },
   model:
       {
-        type: String, required: true
+        type: String
       },
   make:
       {
-        type: String, required: true
+        type: String
       }
 },
 {
