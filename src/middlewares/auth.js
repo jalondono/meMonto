@@ -1,21 +1,21 @@
-// const config = require ('../config');
+const {JWT_SECRET, JWT_EXP} = require ('../config');
 const {UserModel} = require('../models');
 const jwt = require ('jsonwebtoken');
 
-const newToken = (user) => {
-  return jwt.sign({ id: user.id }, 'secret_hola', {
-    expiresIn: '100d'
+const newToken = user => {
+  return jwt.sign({ id: user.id }, JWT_SECRET, {
+    expiresIn: JWT_EXP
   })
 };
 
-const verifyToken = (token) => {
+const verifyToken = (token) =>
   new Promise((resolve, reject) => {
-    jwt.verify(token, 'secret_hola', (err, payload) => {
+    jwt.verify(token, JWT_SECRET, (err, payload) => {
       if (err) return reject(err);
       resolve(payload)
     })
   });
-};
+
 
 async function signup(req, res) {
   if (!req.body.email || !req.body.password) {

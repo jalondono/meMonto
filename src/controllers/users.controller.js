@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const {UserModel} = require('../models');
+const {  } = require('../config');
 
 function me(req, res){
   res.status(200).json({ data: req.user })
