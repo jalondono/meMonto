@@ -21,6 +21,4 @@ app.use('/api/v1', protect);
 app.use('/api/v1/user', UserRoute);
 app.use('/api/v1/vehicle', VehicleRoute);
 
-
-
 module.exports = app;
