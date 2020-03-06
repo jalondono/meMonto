@@ -17,7 +17,7 @@ const userSchema = new Schema(
     type: {
         type: String,
         required: true,
-        enum: ['normal', 'driver', 'admin'],
+        enum: ['normal', 'driver', 'admin', 'super'],
         default: 'normal'
         },
     name: {
