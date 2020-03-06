@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const {VehicleModel} = require('../models')
+const mongoose = require('mongoose');
+const {VehicleModel} = require('../models');
 
 async function getOneById(req, res){
     const id =  req.params.id;
@@ -23,7 +23,7 @@ async function getOneByPlate(req, res){
     catch(err) {
         res.status(400).json({
             message: "Error get one",
-            data: id
+            data: plate
         })
     } 
 }
