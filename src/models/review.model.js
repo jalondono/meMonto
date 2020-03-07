@@ -24,7 +24,8 @@ const reviewSchema = new Schema({
     source: {
         type: String,
         required: true,
-        enum: ["app", "facebook", "tweeter", "other"]
+        enum: ["app", "facebook", "tweeter", "other"],
+        default: 'app'
     },
     originalDate: {
         type: Date,

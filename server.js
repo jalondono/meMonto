@@ -4,7 +4,10 @@ const morgan = require('morgan');
 const { signup, signin, protect } = require('./src/middlewares/auth');
 const {UserRoute} = require('./src/routes');
 const {VehicleRoute} = require('./src/routes');
+const {ReviewRouter} = require('./src/routes');
+const {RatingRoute} = require('./src/routes');
 const {BadgeRoute} = require('./src/routes');
+
 
 const app = express();
 
@@ -21,6 +24,9 @@ app.post('/api/v1/signin', signin);
 app.use('/api/v1', protect);
 app.use('/api/v1/user', UserRoute);
 app.use('/api/v1/vehicle', VehicleRoute);
+app.use('/api/v1/review', ReviewRouter);
+app.use('/api/v1/rating', RatingRoute);
 app.use('/api/v1/badge', BadgeRoute);
+
 
 module.exports = app;
