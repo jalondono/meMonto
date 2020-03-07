@@ -9,12 +9,11 @@ const badgeSchema = new Schema({
       },
   logo:
       {
-        type: Schema.Types.ObjectID,
-        required: true
+        type: Schema.Types.ObjectID
       },
   superadmin:
       {
-        type: String,
+        type: Schema.Types.ObjectID,
         ref: 'user',
         required: false,
         autopopulate: false
@@ -30,7 +29,18 @@ const badgeSchema = new Schema({
   vehicles:
         [{
           type: Schema.Types.ObjectID
-        }]
+        }],
+    createdBy:
+        {
+        type: mongoose.SchemaTypes.ObjectId,
+        ref: 'user',
+        required: true
+        },
+        active:
+        {
+            type: Boolean,
+            default: true
+        }
 },
 {
   timestamps: true
