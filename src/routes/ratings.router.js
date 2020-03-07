@@ -18,4 +18,8 @@ router.get('/user/:userId', RatingsController.getAllUser);
 router.get('/:id', RatingsController.getOneById);
 
 
+// /api/v1/rating//vehicle/stats/average/<vehicle_id>
+// GET: Retrieves the average of all Ratings objects of a Vehicle
+router.get('/vehicle/average/:vehicleId', RatingsController.getAvgRating);
+
 module.exports = router;

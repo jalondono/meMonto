@@ -60,10 +60,35 @@ async function createOne(req, res) {
     }
 }
 
+async function getAvgRating(req, res) {
+    const vehicleId =  req.params.vehicleId;
+    const myDate = new Date();
+    myDate.setDate(myDate.getDate()-30);
+    console.log('Fetching average ratings for vehicleId: ' + vehicleId);
+    try {
+        const data = await RatingModel.find(
+          { createdAt: {'$gt': myDate },
+           vehicleId: vehicleId }
+          );
+        const myList = data.map(a => a.value);
+        const avg = myList.reduce((a,b) => a + b, 0) / myList.length;
+        console.log(avg);
+        const myJson = {'Average': avg};
+        return res.status(200).json(myJson);
+    }
+    catch(err) {
+        console.log(err);
+        res.status(400).json({
+            message: "Error getting average ratings"
+        });
+    }
+}
+
 
 module.exports = {
     getOneById,
     getAllVehicle,
     getAllUser,
     createOne,
+    getAvgRating
 };
