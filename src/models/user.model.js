@@ -30,16 +30,16 @@ const userSchema = new Schema(
     twitterUser: {
         type: String,
     },
-    vehicleId: {
+    vehicleId:
+        {
         type: mongoose.SchemaTypes.ObjectId,
         required: function() { return this.type === 'driver'; }
-
-    },
-    badgeId: {
+        },
+    badgeId:
+        {
         type: mongoose.SchemaTypes.ObjectId,
         required: function() { return this.type === 'admin'; }
-    }
-
+        }
 },
     { timestamps: true }    
 )
