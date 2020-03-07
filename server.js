@@ -5,6 +5,8 @@ const { signup, signin, protect } = require('./src/middlewares/auth');
 const {UserRoute} = require('./src/routes');
 const {VehicleRoute} = require('./src/routes');
 const {ReviewRouter} = require('./src/routes');
+const {RatingRoute} = require('./src/routes');
+
 
 const app = express();
 
@@ -22,5 +24,7 @@ app.use('/api/v1', protect);
 app.use('/api/v1/user', UserRoute);
 app.use('/api/v1/vehicle', VehicleRoute);
 app.use('/api/v1/review', ReviewRouter);
+app.use('/api/v1/rating', RatingRoute);
+
 
 module.exports = app;
