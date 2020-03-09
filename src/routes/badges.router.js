@@ -7,7 +7,10 @@ const { BadgesController, BadgesStatsController} = require('../controllers');
 router.post('/', BadgesController.createOne);
 
 // /api/v1/badge/<badge_id>
+// /api/v1/badge/all
 router.put('/:id', BadgesController.updateOne);
+router.get('/all', BadgesController.getAll);
+router.get('/:id', BadgesController.getOneById);
 
 // /api/v1/badge/driver/<badge_id>
 // GET: Retrieves the list of drivers associated with a Badge.

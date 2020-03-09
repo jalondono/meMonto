@@ -27,8 +27,12 @@ async function getOneByPlate (req, res) {
   }
 }
 async function getAll (req, res) {
+  if (req.user.type !== 'super') {
+    return res.status(400).send({message: 'Unauthorized user'})
+  }
+  const Id =  req.params.userId;
   try {
-    const data = await BadgeModel.find();
+    const data = await BadgeModel.find({ userId: Id });
     return res.status(200).json(data);
   } catch (err) {
     res.status(400).json({
@@ -94,16 +98,32 @@ async function updateOne (req, res) {
     }
     if (findOne.admins) {
       findOne.admins.forEach(element =>
-          admin.push(ObjectId((element)))
+        admin.push(ObjectId((element)))
       );
     }
+
+    for (let i = 0; i < admin.length; i++) {
+      const update = await UserModel
+        .findOneAndUpdate({
+          _id: admin[i]
+        },
+        {
+          badgeId: findOne.id,
+          type: 'admin'
+        },
+        { new: true })
+        .lean()
+        .exec();
+      if (!update) {
+        return res.status(400).end();
+      }
+    }
+
     if (vehicles) {
       vehicles.forEach(element => vehicle.push(ObjectId((element))));
     }
     if (findOne.vehicles) {
       findOne.vehicles.forEach(element => vehicle.push(ObjectId((element))));
-      findOne.vehicles.forEach(element => {
-      const updateOne =  updateUser({badgeId: findOne._id, element})})
     }
     if (drivers) {
       drivers.forEach(element => driver.push(ObjectId((element))));
@@ -143,29 +163,8 @@ function removeDups (names) {
   return Object.keys(unique);
 }
 
-async function updateUser(req, res) {
-    const update = {};
-    update.type = 'admin';
-    update.badgeId = req.badgeId;
-    const updUser = await UserModel
-        .findOneAndUpdate({
-                _id: req.id
-            },
-            update,
-            { new: true })
-        .lean()
-        .exec();
-    if (!updateUser) {
-        return res.status(400).end();
-    }
-    res.status(200).json({ data: update });
-}
-
-
-
 module.exports = {
   getOneById,
-  getOneByPlate,
   getAll,
   createOne,
   updateOne
