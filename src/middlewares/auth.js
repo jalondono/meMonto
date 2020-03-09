@@ -70,9 +70,9 @@ async function protect(req, res, next) {
   const token = bearer.split('Bearer ')[1].trim();
   let payload;
   try {
-    console.log(token);
+    //console.log(token);
     payload = await verifyToken(token);
-    console.log(payload)
+    //console.log(payload)
   } catch (e) {
     return res.status(401).end()
   }
