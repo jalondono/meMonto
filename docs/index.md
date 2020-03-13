@@ -1,4 +1,5 @@
 #README Inside DOCS
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet">
 <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
