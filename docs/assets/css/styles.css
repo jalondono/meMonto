@@ -1,0 +1,20 @@
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+}
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+.font-weight-normal {
+    color: yellow;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5rem;
+
+}
+.font-weight {
+    color: yellow;
+    font-size: 1rem;
+}
+.title {
+    background-color: black;
+}
