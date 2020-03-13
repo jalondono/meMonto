@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -13,7 +16,12 @@
     <nav class="site-header sticky-top py-1">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" href="#" aria-label="Product">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                     viewBox="0 0 24 24" focusable="false"><title>Product</title>
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+                </svg>
             </a>
             <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
@@ -39,15 +47,53 @@
 
     <hr class="featurette-divider">
 
+    <!-- <div class="title position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+         <div class="col-md-5 p-lg-5 mx-auto my-5">
+             <h1 class="display-4 font-italic">About</h1>
+             <p class="lead">With the advent of uber like platforms for hail services we got used to enjoying the comfort and sense of security of knowing who we are riding with.</p>
+            </div>
+     </div>-->
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <!--<h2 class="featurette-heading">About. <span class="text-muted"></span></h2>-->
+            <h1 class="display-4 font-italic">About</h1>
+            <p class="lead">With the advent of uber like platforms for hail services we got used to enjoying the comfort
+                and sense of security of knowing who we are riding with.</p>
+            <p class="lead">Also to be able to express our views on the quality of a delivered service. Nevertheless
+                there are plenty of situation where we have to resort to the traditional public transport service
+                (yellow taxis) and we want to have the same level of comfort and security.</p>
+            <p class="lead">Although motivated by real world necessity, the aim of this project is purely academic. We
+                want to showcase what was learned in the Holberton School Foundation year with emphasis in back end
+                development. The project was carried out by a team of three in a two week period.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                 height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text0 x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text0>
+                <image href="assets/images/taxi-about.jpg" height="500" width="500"/>
+            </svg>
+        </div>
+    </div>
+
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">Vehicle average service rating.<span class="text-muted"></span></h2>
-            <p class="lead">Licence plate and boom. On one click get a picture of the quality of the service offered by a given vehicle.
-                An input field for the vehicle licence plate and a search button will get in no time to the vehicle view. There you can find the vehicle and driver info, together with the average rating and reviews.
+            <p class="lead">Licence plate and boom. On one click get a picture of the quality of the service offered by
+                a given vehicle.
+                An input field for the vehicle licence plate and a search button will get in no time to the vehicle
+                view. There you can find the vehicle and driver info, together with the average rating and reviews.
                 .</p>
         </div>
         <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                 height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
         </div>
     </div>
 
@@ -60,7 +106,12 @@
                 This is the service log book. Here you see everything was worthed mention about the particular ride.</p>
         </div>
         <div class="col-md-5 order-md-1">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                 height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
         </div>
     </div>
 
@@ -69,11 +120,17 @@
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">Rate and Review the service. <span class="text-muted"></span></h2>
-            <p class="lead">We are all coresponsable of each other's well being. Contribute to the community and let others know about your experience.
+            <p class="lead">We are all coresponsable of each other's well being. Contribute to the community and let
+                others know about your experience.
                 Help us all to improve the quality and security of public transport.</p>
         </div>
         <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                 height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
         </div>
     </div>
 
@@ -84,44 +141,251 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/philipe_history.jpg" height="150" width="150"/>
+            </svg>
+
             <h2>Paula (Public transport service user)</h2>
-            <p>Paula was partying with friends, she had a great time and now is time to get home. It is late in the night and she is concerned about the safety of her drive home. Her friends walk her to the taxi’s collecting point, where she inputs the licence plates of the available vehicles to get their ratings and reviews and for certain vehicles also the drivers info. After filtering for ratings she boards a taxi confidently knowing she get home safe.
-                After getting home safely and comfortably she thanks the driver Pedro and gives him a 5 stars review and a thank you note for the professionalism with which he offered her the transportations service.
+            <p>Paula was partying with friends, she had a great time and now is time to get home. It is late in the
+                night and she is concerned about the safety of her drive home. Her friends walk her to the taxi’s
+                collecting point, where she inputs the licence plates of the available vehicles to get their ratings and
+                reviews and for certain vehicles also the drivers info. After filtering for ratings she boards a taxi
+                confidently knowing she get home safe.
+                After getting home safely and comfortably she thanks the driver Pedro and gives him a 5 stars review and
+                a thank you note for the professionalism with which he offered her the transportations service.
                 .</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/nn_history.jpg" height="150" width="150"/>
+            </svg>
             <h2>Pedro (Taxi driver)</h2>
-            <p>Pedro is a professional, he has been in the business for 10 years, he takes pride in being a taxi driver. It saddens him that the drivers gilt as whole has such a bad reputation although to his views most fellow drivers colleagues are hard working people. He wants to take an active role improving his profession image. He registers himself as a driver providing his data and picture.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <p>Pedro is a professional, he has been in the business for 10 years, he takes pride in being a taxi driver.
+                It saddens him that the drivers gilt as whole has such a bad reputation although to his views most
+                fellow drivers colleagues are hard working people. He wants to take an active role improving his
+                profession image. He registers himself as a driver providing his data and picture.</p>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/harps_history.jpg" height="150" width="150"/>
+            </svg>
             <h2>John (Public transport service user parent)</h2>
-            <p>John loves his daughter Camila. He would like to take her everywhere, but due to time constraints that is not possible. So he regularly calls taxis to pick her up and take her to her friends. He is alway anxious about his daughter's safety. With memonto.co he checks the driver’s reviews before letting her board the vehicle.  That way he knows who she is riding with.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <p>John loves his daughter Camila. He would like to take her everywhere, but due to time constraints that is
+                not possible. So he regularly calls taxis to pick her up and take her to her friends. He is alway
+                anxious about his daughter's safety. With memonto.co he checks the driver’s reviews before letting her
+                board the vehicle. That way he knows who she is riding with.</p>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <h2>Mario  (Public transport service user)</h2>
-            <p>He is trying to get back home after a long night of work, he is the kitchen chef at a trendy restaurant. He hails a taxi in the street, the driver asks him where he is going, after he tell him, the answer is a denial of service, this direction was not “convenient” for the driver.  He is tired of that, transport is public service, and the denial of service although legally punishable is hardly enforced. He notes the vehicle plate and introduces the review in the app. He wishes himself and other users don’t have to get a no for an answer when they want to get home. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/marius_history.jpg" height="150" width="150"/>
+            </svg>
+            <h2>Mario (Public transport service user)</h2>
+            <p>He is trying to get back home after a long night of work, he is the kitchen chef at a trendy restaurant.
+                He hails a taxi in the street, the driver asks him where he is going, after he tell him, the answer is a
+                denial of service, this direction was not “convenient” for the driver. He is tired of that, transport is
+                public service, and the denial of service although legally punishable is hardly enforced. He notes the
+                vehicle plate and introduces the review in the app. He wishes himself and other users don’t have to get
+                a no for an answer when they want to get home. </p>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/michael_history.jpg" height="150" width="150"/>
+            </svg>
             <h2>Cristina (Shopping mall administration)</h2>
-            <p>She takes care of the shopper's overall experience, of which security is a big part. She hates to hear stories about shoppers being mishandled by the taxi drivers using the shopping mall collecting point. Together with the shopping mall administration they will require drivers using the collecting point to register in momonto.co (the plattform) and to undergo a background check and continuous monitoring. Drivers on return will get the shopping mall endorsement (badge).</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <p>She takes care of the shopper's overall experience, of which security is a big part. She hates to hear
+                stories about shoppers being mishandled by the taxi drivers using the shopping mall collecting point.
+                Together with the shopping mall administration they will require drivers using the collecting point to
+                register in momonto.co (the plattform) and to undergo a background check and continuous monitoring.
+                Drivers on return will get the shopping mall endorsement (badge).</p>
+
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
+    <h1 class="featurette-heading">Authors</h1>
+    <!--<div class="row">
+        <div class="col-lg-4">
+            <svg  class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/philipe_history.jpg" height="150" width="150"/>
+            </svg>
+
+            <h2>Juan Londoño</h2>
+            <p>Backend Developer.</p>
+            <div class="team-social-bar-wrap">
+                <div class="team-social-bar">
+                    <a class="social-btn sb-style-1 sb-twitter" href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-github" href="#">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-stackoverflow" href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-skype" href="#">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/nn_history.jpg" height="150" width="150"/>
+            </svg>
+            <h2>Santiago Velez</h2>
+            <p>Frontend Developer.</p>
+            <div class="team-social-bar-wrap">
+                <div class="team-social-bar">
+                    <a class="social-btn sb-style-1 sb-twitter" href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-github" href="#">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-stackoverflow" href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-skype" href="#">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </div>
+            </div>
+        </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;
+
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <image href="assets/images/harps_history.jpg" height="150" width="150"/>
+            </svg>
+            <h2>Cesar Velez</h2>
+            <p>Devops.</p>
+            <div class="team-social-bar-wrap">
+                <div class="team-social-bar">
+                    <a class="social-btn sb-style-1 sb-twitter" href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-github" href="#">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-stackoverflow" href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="social-btn sb-style-1 sb-skype" href="#">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>-->
+    <section class="container py-5">
+       <!-- <h2 class="h4 block-title text-center mt-2">This month top authors</h2>-->
+        <div class="row pt-3"
+        >
+            <div class="col-lg-4 col-sm-6 mb-30 pb-2">
+                <div class="team-card-style-3 mx-auto">
+                    <div class="team-thumb">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Author Picture"></div>
+                    <h4 class="team-name">Emanuel Ortega</h4><a class="team-contact-link" href="tel:+19871625346"><i
+                        class="fe-icon-phone"></i>&nbsp;+1 (987) 162 53 46</a><a class="team-contact-link"
+                                                                                 href="mailto:info@example.com"><i
+                        class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+                    <div class="team-social-bar-wrap">
+                        <div class="team-social-bar"><a class="social-btn sb-style-1 sb-twitter" href="#"> <i
+                                class="fa fa-twitter"></i> </a> <a class="social-btn sb-style-1 sb-github" href="#"> <i
+                                class="fa fa-github"></i> </a> <a class="social-btn sb-style-1 sb-stackoverflow"
+                                                                  href="#"> <i class="fa fa-linkedin"></i> </a> <a
+                                class="social-btn sb-style-1 sb-skype" href="#"> <i class="fa fa-skype"></i> </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-30 pb-2">
+                <div class="team-card-style-3 mx-auto">
+                    <div class="team-thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                                 alt="Author Picture"></div>
+                    <h4 class="team-name">Samantha Palson</h4><a class="team-contact-link" href="tel:+57872336590"><i
+                        class="fe-icon-phone"></i>&nbsp; +5 (787) 233 65 90</a><a class="team-contact-link"
+                                                                                  href="mailto:info@example.com"><i
+                        class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+                    <div class="team-social-bar-wrap">
+                        <div class="team-social-bar"><a class="social-btn sb-style-1 sb-twitter" href="#"> <i
+                                class="fa fa-twitter"></i> </a> <a class="social-btn sb-style-1 sb-github" href="#"> <i
+                                class="fa fa-github"></i> </a> <a class="social-btn sb-style-1 sb-linkedin" href="#"> <i
+                                class="fa fa-linkedin"></i> </a> <a class="social-btn sb-style-1 sb-skype" href="#"> <i
+                                class="fa fa-skype"></i> </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-30 pb-2">
+                <div class="team-card-style-3 mx-auto">
+                    <div class="team-thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                                 alt="Author Picture"></div>
+                    <h4 class="team-name">Emma Johnson</h4><a class="team-contact-link" href="tel:+13907765843"><i
+                        class="fe-icon-phone"></i>&nbsp;+1 (390) 776 58 43</a><a class="team-contact-link"
+                                                                                 href="mailto:info@example.com"><i
+                        class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+                    <div class="team-social-bar-wrap">
+                        <div class="team-social-bar"><a class="social-btn sb-style-1 sb-twitter" href="#"> <i
+                                class="fa fa-twitter"></i> </a> <a class="social-btn sb-style-1 sb-github" href="#"> <i
+                                class="fa fa-github"></i> </a> <a class="social-btn sb-style-1 sb-linkedin" href="#"> <i
+                                class="fa fa-linkedin"></i> </a> <a class="social-btn sb-style-1 sb-skype" href="#"> <i
+                                class="fa fa-skype"></i> </a></div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-lg-3 col-sm-6 mb-30 pb-2">
+                <div class="team-card-style-3 mx-auto">
+                    <div class="team-thumb"><img src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                                                 alt="Author Picture"></div>
+                    <h4 class="team-name">William Smith</h4><a class="team-contact-link" href="tel:+72056557984"><i
+                        class="fe-icon-phone"></i>&nbsp;+7 (205) 655 79 84</a><a class="team-contact-link"
+                                                                                 href="mailto:info@example.com"><i
+                        class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+                    <div class="team-social-bar-wrap">
+                        <div class="team-social-bar"><a class="social-btn sb-style-1 sb-twitter" href="#"> <i
+                                class="fa fa-twitter"></i> </a> <a class="social-btn sb-style-1 sb-github" href="#"> <i
+                                class="fa fa-github"></i> </a> <a class="social-btn sb-style-1 sb-linkedin" href="#"> <i
+                                class="fa fa-linkedin"></i> </a> <a class="social-btn sb-style-1 sb-skype" href="#"> <i
+                                class="fa fa-skype"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
 
     <!-- START THE FEATURETTES -->
 
 
 </div>
-
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+</footer>
 </body>
 </html>
